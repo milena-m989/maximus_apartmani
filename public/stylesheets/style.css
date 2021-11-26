@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   width:100%;
-  background:#248CCB;
+  background:#76BCF8;
   height: 5.625em;
 }
 #logo-img{
@@ -102,7 +102,7 @@ body{
 }
 .detaljnije{
   display: inline-block;
-  background-color: #E0B973;
+  background-color: #e0b973;
   border: none;
   padding: 15px 32px;
   font-size: 1em;
