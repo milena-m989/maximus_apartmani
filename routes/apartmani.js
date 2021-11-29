@@ -74,11 +74,19 @@ router.get('/1', function(req, res, next) {
         ],
         images: [
             { 
-                src :"/images/naslovna/bubanj.jpg",
+                src :"/images/apartman1/IMG_4520.jpg",
                 active: true
             },
             {
-                src: "/images/naslovna/grad-nis.jpg",
+                src :"/images/apartman1/IMG_4521.jpg",
+                active: false
+            },
+            {
+                src :"/images/apartman1/IMG_4525.jpg",
+                active: false
+            },
+            {
+                src :"/images/apartman1/IMG_4528.jpg",
                 active: false
             }
         ]
@@ -100,11 +108,15 @@ router.get('/2', function(req, res, next) {
         ],  
         images: [
             { 
-                src :"/images/naslovna/bubanj.jpg",
+                src :"/images/apartman2/IMG_4459.jpg",
                 active: true
             },
             {
-                src: "/images/naslovna/grad-nis.jpg",
+                src :"/images/apartman2/IMG_4460.jpg",
+                active: false
+            },
+            {
+                src :"/images/apartman2/IMG_4465.jpg",
                 active: false
             }
         ]  
@@ -129,11 +141,19 @@ router.get('/3', function(req, res, next) {
         ],
         images: [
             { 
-                src :"/images/naslovna/bubanj.jpg",
+                src :"/images/apartman3/IMG_4478.jpg",
                 active: true
             },
             {
-                src: "/images/naslovna/grad-nis.jpg",
+                src :"/images/apartman3/IMG_4479.jpg",
+                active: false
+            },
+            {
+                src :"/images/apartman3/IMG_4481.jpg",
+                active: false
+            },
+            {
+                src :"/images/apartman3/IMG_4485.jpg",
                 active: false
             }
         ]
@@ -157,11 +177,23 @@ router.get('/4', function(req, res, next) {
         ],
         images: [
             { 
-                src :"/images/naslovna/bubanj.jpg",
+                src :"/images/apartman4/IMG_4539.jpg",
                 active: true
             },
             {
-                src: "/images/naslovna/grad-nis.jpg",
+                src: "/images/apartman4/IMG_4541.jpg",
+                active: false
+            },
+            {
+                src: "/images/apartman4/IMG_4542.jpg",
+                active: false
+            },
+            {
+                src: "/images/apartman4/IMG_4551.jpg",
+                active: false
+            },
+            {
+                src: "/images/apartman4/IMG_4554.jpg",
                 active: false
             }
         ]
