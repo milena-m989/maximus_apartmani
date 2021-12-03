@@ -7,7 +7,7 @@
   position: fixed;
   display: flex;
   align-items: center;
-  width:100%;
+  width: 100%;
   background: transparent;
   height: 5.625em;
 }
@@ -42,7 +42,7 @@ nav > ul {
   color: black;
 }
 .img-nis{
-  width: 100vw;
+  width:100%;
   height: auto;
 }
 body{
@@ -89,7 +89,6 @@ body{
   padding: 50px;
 }
 .apartmani-slika{
-  width: 50vw;
   height: 40vw;
   display: flex;
   
@@ -103,7 +102,7 @@ body{
 }
 .detaljnije{
   display: inline-block;
-  background-color: #915b32;
+  background-color: #8c6a4a;
   border: none;
   padding: 15px 32px;
   border-radius: 8px;
@@ -179,7 +178,7 @@ body{
   }
 footer{
   width:100%;
-  background-color: #915b32;
+  background-color: #826142;
   text-align:right;
   padding-top: 0.5em;
   height: 3em;

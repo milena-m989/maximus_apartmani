@@ -15,14 +15,14 @@
   text-align: center;
   line-height: 1.8;
   text-align: justify;
-  padding: 0 1.875em 1.875em 1.875em;
+  padding: 0 4em 1.875em 4em;
 }
 .lista{
   list-style-type:none;
   
 }
 .name{
-  background-color: #248ccb;
+  background-color: #8c6a4a;
   padding: 0.75em;
   text-align: right;
   margin-block-start: 0;
