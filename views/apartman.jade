@@ -2,6 +2,18 @@ extends layout
 
 block content
   link(rel='stylesheet' href='/stylesheets/apartman.css')
+  //- #page-wrapper
+  //- header#header
+  //-   .logo
+  //-     img#logo-img(src='https://user-images.githubusercontent.com/79284893/133991372-02941c4b-4f77-4d7c-858b-509abcd57b70.png' alt='maximus logo')
+  //-   nav#nav-bar
+  //-     ul
+  //-       li
+  //-         a.nav-link(href='#dobrodosli') Dobrodošli
+  //-       li
+  //-         a.nav-link(href='#apartmani') Apartmani
+  //-       li
+  //-         a.nav-link(href='#kontakt') Kontakt i rezervacija
   .text-apartments
     h2.apartments Apartmani
     p.apartments-dscr
@@ -31,6 +43,28 @@ block content
         hr      
         ul.lista
           each val in features
+            li.dsc 
+              img.grid(src='#{val["icon"]}')
+              |     #{val["title"]}
+      .opis
+        ul.details(style='list-style-type:none;')
+          li.detail
+            img(src="https://img.icons8.com/ios-glyphs/30/000000/star--v1.png")
+            h3.nalov-detalja Kuhinja
+        hr      
+        ul.lista
+          each val in kitchen
+            li.dsc 
+              img.grid(src='#{val["icon"]}')
+              |     #{val["title"]}
+      .opis
+        ul.details(style='list-style-type:none;')
+          li.detail
+            img(src="https://img.icons8.com/ios-glyphs/30/000000/star--v1.png")
+            h3.nalov-detalja Kupatilo
+        hr      
+        ul.lista
+          each val in bathroom
             li.dsc 
               img.grid(src='#{val["icon"]}')
               |     #{val["title"]}

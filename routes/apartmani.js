@@ -18,10 +18,6 @@ const features = {
         title: "Klima",
         icon: "https://img.icons8.com/ios/50/000000/air-conditioner.png"
     },
-    "peskiri": {
-        title: "Peškiri",
-        icon: "https://img.icons8.com/ios/50/000000/towel.png"
-    },
     "kuhinja": {
         title: "Kuhinja",
         icon: "https://img.icons8.com/ios/50/000000/kitchen-room.png"
@@ -38,6 +34,9 @@ const features = {
         title: "Krevetac na upit",
         icon: "https://img.icons8.com/ios/50/000000/crib.png"
     },
+}
+
+const bathroom = {
     "wc-papir": {
         title: "Wc papir",
         icon: "https://img.icons8.com/ios/50/000000/toilet-paper.png"
@@ -53,9 +52,42 @@ const features = {
     "tus": {
         title: "Tuš kabina",
         icon: "https://img.icons8.com/ios/50/000000/shower.png"
+    },
+    "peskiri": {
+        title: "Peškiri",
+        icon: "https://img.icons8.com/ios/50/000000/towel.png"
     }
-    
+}
 
+const kitchen = {
+    "ploca": {
+        title: "Indukciona ploča",
+        icon: "https://img.icons8.com/ios/50/000000/electric-stovetop.png"
+    },
+    "frizider": {
+        title: "Frižider",
+        icon: "https://img.icons8.com/ios/50/000000/fridge.png"
+    },
+    "posudje": {
+        title: "Posudje",
+        icon: "https://img.icons8.com/ios/50/000000/kitchen--v1.png"
+    },
+    "kuvalo": {
+        title: "Električno kuvalo",
+        icon: "https://img.icons8.com/ios/50/000000/electric-teapot.png"
+    },
+    "case": {
+        title: "Čaše",
+        icon: "https://img.icons8.com/ios/50/000000/guinness-beer--v1.png"
+    },
+    "escajg": {
+        title: "Escajg",
+        icon: "https://img.icons8.com/ios/50/000000/cutlery.png"
+    },
+    "solje": {
+        title: "Šolje",
+        icon: "https://img.icons8.com/ios/50/000000/tea-cup.png"
+    }
 }
 
 /* GET home page. */
@@ -66,11 +98,26 @@ router.get('/1', function(req, res, next) {
             features["fen"], 
             features["tv"], 
             features["wifi"], 
-            features["klima"], 
-            features["peskiri"], 
+            features["klima"],  
             features["kuhinja"], 
             features["pegla"], 
             features["pet"],
+        ],
+        bathroom: [
+            bathroom["peskiri"], 
+            bathroom["tus"],
+            bathroom["sapun"],
+            bathroom["sampon"],
+            bathroom["wc-papir"],
+        ],
+        kitchen: [
+            kitchen["ploca"], 
+            kitchen["frizider"],
+            kitchen["posudje"],
+            kitchen["kuvalo"],
+            kitchen["case"],
+            kitchen["escajg"],
+            kitchen["solje"],
         ],
         images: [
             { 
@@ -102,9 +149,15 @@ router.get('/2', function(req, res, next) {
             features["tv"], 
             features["wifi"], 
             features["klima"], 
-            features["peskiri"],  
             features["pegla"], 
             features["pet"],    
+        ],
+        bathroom: [
+            bathroom["peskiri"], 
+            bathroom["tus"],
+            bathroom["sapun"],
+            bathroom["sampon"],
+            bathroom["wc-papir"],
         ],  
         images: [
             { 
@@ -133,11 +186,26 @@ router.get('/3', function(req, res, next) {
             features["tv"], 
             features["wifi"], 
             features["klima"], 
-            features["peskiri"], 
             features["kuhinja"], 
             features["pegla"], 
             features["pet"],
             features["krevetac"],
+        ],
+        bathroom: [
+            bathroom["peskiri"], 
+            bathroom["tus"],
+            bathroom["sapun"],
+            bathroom["sampon"],
+            bathroom["wc-papir"],
+        ],
+        kitchen: [
+            kitchen["ploca"], 
+            kitchen["frizider"],
+            kitchen["posudje"],
+            kitchen["kuvalo"],
+            kitchen["case"],
+            kitchen["escajg"],
+            kitchen["solje"],
         ],
         images: [
             { 
@@ -169,11 +237,26 @@ router.get('/4', function(req, res, next) {
             features["tv"], 
             features["wifi"], 
             features["klima"], 
-            features["peskiri"], 
             features["kuhinja"], 
             features["pegla"], 
             features["pet"],
             features["krevetac"],
+        ],
+        bathroom: [
+            bathroom["peskiri"], 
+            bathroom["tus"],
+            bathroom["sapun"],
+            bathroom["sampon"],
+            bathroom["wc-papir"],
+        ],
+        kitchen: [
+            kitchen["ploca"], 
+            kitchen["frizider"],
+            kitchen["posudje"],
+            kitchen["kuvalo"],
+            kitchen["case"],
+            kitchen["escajg"],
+            kitchen["solje"],
         ],
         images: [
             { 
