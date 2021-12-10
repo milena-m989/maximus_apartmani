@@ -6,7 +6,7 @@ block content
     h2.apartments Apartmani
     p.apartments-dscr
       | Maximus apartmani su luksuzni apartmani smešteni u centru grada Niša. U našoj ponudi su 4 potpuno opremljena apartmana različite kvadrature. Svi apartmani su moderni, klimatizovani i korisnicima pružaju potpuno zadovoljstvo i uslugu. Kućni ljubimci su dobrodošli u svim našim apartmanima. U okolini Maximus apartmana nalaze se brojne prodavnice hrane, teretane, igraonice za decu, kafići, restorani, frizerski i kozmetički saloni. Na samo 5 minuta hoda je pešačka zona i centar grada, dok su niška Tvrdjava i park Čair udaljeni 15ak minuta hoda.  
-    #carouselExampleControls.carousel.slide(data-ride='carousel')
+    #carouselExampleControls.carousel.slide(data-bs-ride='carousel')
       .carousel-inner
         each val in images
           if val.active
@@ -15,10 +15,10 @@ block content
           else
             .carousel-item
               img.d-block.w-100(src='#{val["src"]}')
-      a#prev.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+      button.carousel-control-prev(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='prev')
         span.carousel-control-prev-icon(aria-hidden='true')
-        span.sr-only Previous
-      a#next.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+        span.visually-hidden Previous
+      button.carousel-control-next(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='next')
         span.carousel-control-next-icon(aria-hidden='true')
         span.sr-only Next
     .apartment_name
