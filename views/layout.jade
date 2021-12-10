@@ -13,9 +13,21 @@ html
     link(rel='preconnect' href='https://fonts.googleapis.com')
     link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
     link(rel='shortcut icon' href='/images/favicon.ico')
-  body
-    block content
     script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+  body
+    #page-wrapper
+      header#header
+        .logo
+          img#logo-img(src='https://user-images.githubusercontent.com/79284893/133991372-02941c4b-4f77-4d7c-858b-509abcd57b70.png' alt='maximus logo')
+        nav#nav-bar
+          ul
+            li
+              a.nav-link(href='#dobrodosli') Dobrodošli
+            li
+              a.nav-link(href='#apartmani') Apartmani
+            li
+              a.nav-link(href='#kontakt') Kontakt i rezervacija
+    block content
     script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')
   footer 
