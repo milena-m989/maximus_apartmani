@@ -95,12 +95,12 @@ router.get('/1', function(req, res, next) {
     const config = { 
         name: 'Apartman 1', 
         features: [
-            features["fen"], 
             features["tv"], 
             features["wifi"], 
             features["klima"],  
             features["kuhinja"], 
-            features["pegla"], 
+            features["pegla"],
+            features["fen"],  
             features["pet"],
         ],
         bathroom: [
@@ -145,12 +145,12 @@ router.get('/2', function(req, res, next) {
     const config = {
         name: 'Apartman 2',
         features: [
-            features["fen"], 
             features["tv"], 
             features["wifi"], 
-            features["klima"], 
-            features["pegla"], 
-            features["pet"],    
+            features["klima"],   
+            features["pegla"],
+            features["fen"],  
+            features["pet"],
         ],
         bathroom: [
             bathroom["peskiri"], 
@@ -182,12 +182,12 @@ router.get('/3', function(req, res, next) {
     const config = { 
         name: 'Apartman 3', 
         features: [
-            features["fen"], 
             features["tv"], 
             features["wifi"], 
-            features["klima"], 
+            features["klima"],  
             features["kuhinja"], 
-            features["pegla"], 
+            features["pegla"],
+            features["fen"],  
             features["pet"],
             features["krevetac"],
         ],
@@ -233,12 +233,12 @@ router.get('/4', function(req, res, next) {
     const config = { 
         name: 'Apartman 4', 
         features: [
-            features["fen"], 
             features["tv"], 
             features["wifi"], 
-            features["klima"], 
+            features["klima"],  
             features["kuhinja"], 
-            features["pegla"], 
+            features["pegla"],
+            features["fen"],  
             features["pet"],
             features["krevetac"],
         ],
