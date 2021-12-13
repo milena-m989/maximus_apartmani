@@ -3,6 +3,7 @@
   font-size: 2.5em;
   text-align: center;
   padding: 0.75em;
+  padding-top: 2.5em;
 }
 .text-apartments {
   display: flex;
@@ -19,10 +20,9 @@
 }
 .lista {
   list-style-type:none;
-  
 }
 .name {
-  background-color: #248ccb;
+  background-color: #826142;
   padding: 0.75em;
   text-align: right;
   margin-block-start: 0;
@@ -58,4 +58,45 @@
   display: flex;
   flex-direction: column;
   padding: 2em;
+}
+#page-wrapper {
+  position: relative;
+  font-family: 'Dancing Script', cursive;
+}
+#header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+  height: 5.625em;
+}
+#logo-img {
+  width: 100%;
+  height: 100%;
+  max-width: 9.375em;
+}
+#nav-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+nav > ul {
+  width: 60vw;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-link {
+ padding: 0 1.250em;
+ text-decoration: none;
+ color: black;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  color: black;
 }
