@@ -3,9 +3,9 @@ extends layout
 block content
   link(rel='stylesheet' href='/stylesheets/apartman.css')
   .text-apartments
-    h2.apartments Apartmani
+    h2.apartments #{__('apartments')}
     p.apartments-dscr
-      | Maximus apartmani su luksuzni apartmani smešteni u centru grada Niša. U našoj ponudi su 4 potpuno opremljena apartmana različite kvadrature. Svi apartmani su moderni, klimatizovani i korisnicima pružaju potpuno zadovoljstvo i uslugu. Kućni ljubimci su dobrodošli u svim našim apartmanima. U okolini Maximus apartmana nalaze se brojne prodavnice hrane, teretane, igraonice za decu, kafići, restorani, frizerski i kozmetički saloni. Na samo 5 minuta hoda je pešačka zona i centar grada, dok su niška Tvrdjava i park Čair udaljeni 15ak minuta hoda.  
+      | #{__('apartments_description')}
     #carouselExampleControls.carousel.slide(data-bs-ride='carousel')
       .carousel-inner
         each val in images
@@ -28,7 +28,7 @@ block content
           ul.details(style='list-style-type:none;')
             li.detail
               img(src="https://img.icons8.com/ios-glyphs/30/000000/star--v1.png")
-              h3.nalov-detalja Detalji apartmana
+              h3.nalov-detalja #{__('details')}
           hr      
           ul.lista
             each val in features
@@ -40,7 +40,7 @@ block content
           ul.details(style='list-style-type:none;')
             li.detail
               img(src="https://img.icons8.com/ios-glyphs/30/000000/star--v1.png")
-              h3.nalov-detalja Kuhinja
+              h3.nalov-detalja #{__('kitchen')}
           hr      
           ul.lista
             each val in kitchen
@@ -52,7 +52,7 @@ block content
           ul.details(style='list-style-type:none;')
             li.detail
               img(src="https://img.icons8.com/ios-glyphs/30/000000/star--v1.png")
-              h3.nalov-detalja Kupatilo
+              h3.nalov-detalja #{__('bathroom')}
           hr      
           ul.lista
             each val in bathroom
