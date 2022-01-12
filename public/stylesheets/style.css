@@ -203,18 +203,22 @@ footer {
   font-size: 0.5em;
   font-weight: normal;
 }
-.rs {
+#first-lang {
   cursor: pointer;
   display: flex;
-  justify-content: space-between;
-  width: 85px;
+  width: 110px;
+  padding-left: 5px;
 }
-.rs:before {
+#first-lang:before {
   content:'';
   display: block;
-  width: 35px;
-  height:20px;
-  background-image: url(https://flagcdn.com/h20/rs.png);
+  margin-right: 10px;
+}
+.rs:before {
+  width: 44px;
+  height: 30px;
+  background-image: url(/images/rs.png);
+  padding: 0 5px;
 }
 .lang-menu ul {
   margin: 0;
@@ -224,7 +228,7 @@ footer {
   border: 0em;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 25px;
+  top: 35px;
   left: 0;
 }
 .lang-menu ul li {
@@ -232,29 +236,28 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.lang-menu ul li a {
+#second-lang {
   width: 120px;
   display: block;
   padding: 5px;
 }
-.lang-menu ul li a:before {
+#second-lang:before {
   content:'';
   display: inline-block;
-  width: 40px;
-  height: 20px;
   vertical-align: middle;
   margin-right: 10px;
-  background-image: url(https://flagcdn.com/h20/gb.png);
 }
-.lang-menu ul li a:hover {
+.gb:before {
+  width: 44px;
+  height: 28px;
+  background-image: url(/images/gb.png);
+}
+#second-lang:hover {
   border: 2px solid rgba(0,0,0,0.2);
-  color: black;
-}
-a {
-  text-decoration: none;
   color: black;
 }
 .lang-menu:hover ul {
   display: block;
 }
+
 
