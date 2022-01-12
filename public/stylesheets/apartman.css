@@ -1,63 +1,11 @@
-.apartments {
-  font-family: 'Dancing Script', cursive;
-  font-size: 2.5em;
-  text-align: center;
-  padding: 0.75em;
-  padding-top: 2.5em;
+html{
+  font-size: 100%;
 }
-.text-apartments {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}  
-.apartments-dscr {
-  font-family: 'Montserrat', sans-serif;
+body{
+  margin: 0;
   font-size: 1.125em;
-  text-align: center;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.8;
-  text-align: justify;
-  padding: 0 4em 1.875em 4em;
-}
-.lista {
-  list-style-type:none;
-}
-.name {
-  background-color: #826142;
-  padding: 0.75em;
-  text-align: right;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-size: 2em;
-}
-.dsc {
-  float:  left;
-  padding: 1.5em;
-  text-align: center;
-}
-.grid {
-  flex-direction: column;
-  padding: 0.75em;
-}
-.detail {
-  align-items:center;
-  display: flex;
-  padding: 1em;
-}
-.nalov-detalja {
-  padding: 0.75em;
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.75em;
-}
-.carousel {
-  padding: 0 4em;
-}
-.apartment_name {
-  padding: 0 4em;
-}
-.opis {
-  display: flex;
-  flex-direction: column;
-  padding: 2em;
 }
 #page-wrapper {
   position: relative;
@@ -100,4 +48,61 @@ nav > ul {
 .nav-link:hover {
   text-decoration: underline;
   color: black;
+}
+.apartments {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 0.75em;
+  padding-top: 2.5em;
+}
+.text-apartments {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}  
+.apartments-dscr {
+  text-align: justify;
+  padding: 0 4em 1.875em 4em;
+}
+.lista {
+  list-style-type:none;
+}
+.name {
+  background-color: #826142;
+  padding: 0.5em;
+  text-align: right;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 2em;
+}
+.dsc {
+  float:  left;
+  padding: 1.5em;
+  text-align: center;
+}
+.grid {
+  flex-direction: column;
+  padding: 0.75em;
+}
+.detail {
+  align-items:center;
+  display: flex;
+  padding: 1em;
+}
+.nalov-detalja {
+  padding: 0.75em;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.75em;
+}
+.carousel {
+  padding: 0 4em;
+}
+.apartment_name {
+  padding: 0 4em;
+}
+.opis {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
 }
