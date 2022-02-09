@@ -4,7 +4,6 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const { I18n } = require('i18n');
-// const parse = require('url-parse');
 
 const indexRouter = require('./routes/index');
 const apartmansRouter = require('./routes/apartmani');
