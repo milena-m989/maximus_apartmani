@@ -1,25 +1,41 @@
+html{
+  font-size: 100%;
+}
+body{
+  margin: 0;
+  font-size: 1.125em;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.8;
+}
+@media(max-width:480px) {
+  body {
+   font-size: 1em;
+  }
+}
 #page-wrapper{
   position: relative;
-  font-family: 'Dancing Script', cursive;
 }
 #header{
   position: fixed;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   width: 100%;
   background: transparent;
-  height: 5.625em;
+  padding-right: 1em;
+  line-height: 1.2em;
+  margin-top: auto;
 }
 #header.scrolled {
   background-color: #fff;
   transition: background-color 200ms linear;
 }
 #logo-img{
+  padding: 1em;
   width: 100%;
-  height: 100%;
-  max-width: 9.375em;
+  height: auto;
   }
-#nav-bar {
+.nav-bar {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -28,11 +44,15 @@
   font-size: 1.5em;
   font-weight: bold;
 }
-nav > ul {
-  width: 60vw;
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-end;
+@media(max-width:1000px){
+  .nav-bar {
+    font-size: 1.2em;
+  }
+}
+@media(max-width:830px){
+  .nav-bar {
+    font-size: 1em;
+  }
 }
 .nav-link{
  padding: 0 1.250em;
@@ -47,60 +67,76 @@ nav > ul {
   width:100%;
   height: auto;
 }
-body{
-  margin: 0;
-}
 .dobrodosli{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 1.875em;
   padding-top:90px;
   margin-top:-90px;
-  font-family: 'Dancing Script', cursive;
 }
 .uvod{
-  padding: 0.75em;
-  font-size: 2.2em;
+  padding: 0.75em 0.75em 0em 0.75em;
+  font-size: 3em;
+  font-family: 'Dancing Script', cursive;
+}
+@media(max-width:480px) {
+  .uvod {
+   font-size: 2em;
+  }
 }
 .p-uvoda{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  padding: 0 1.875em 1.875em 1.875em;
-  line-height: 1.8;
+  padding: 1.5em;
   text-align: justify;
+}
+@media(max-width:1400px) {
+  .p-uvoda {
+   padding: 1.5em 1.5em 0em 1.5em;
+  }
 }
 .apartmani{
   display: flex;
   flex-direction: row;
   margin: 20px;
   justify-content:space-around;
+  align-items: center;
   padding-top: 90px;
   margin-top: -90px;
+}
+@media(max-width:1400px){
+  .apartmani{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .naziv-apartmana{
   font-family: 'Dancing Script', cursive;
   font-size: 2em;
-  padding: 0.75em;
+  padding-bottom: 0.75em;
+}
+@media(max-width:480px) {
+  .naziv-apartmana {
+   font-size: 1.5em;
+   font-weight:bold;
+  }
 }
 .apartmani-tekst{
-  width: 50vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  align-items: flex-start;
+  padding: 1.5em;
 }
 .apartmani-slika{
-  height: 40vw;
-  display: flex;
-  
+  width: 100%;
+  height: auto;
 }
 .opis-sobe{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.125em;
-  padding-bottom: 1em;
-  line-height: 1.8;
   text-align: justify;
+}
+.btn {
+  padding: 0em;
 }
 .detaljnije{
   display: inline-block;
@@ -115,70 +151,101 @@ body{
 .detaljnije:hover{
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-.opis-mape{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.125em;
-  text-align: center;
-  padding: 30px;
+@media(max-width:480px) {
+  .detaljnije {
+   padding: 8px 16px;
+  }
 }
 .p-location{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  /* padding: 0 1.875em 1.875em 1.875em; */
-  line-height: 1.8;
   text-align: justify;
+  padding: 1.5em;
 }
 #kontakt{
-  display:flex;
-  flex-direction: row;
-  justify-content:space-around;
   padding-top:90px;
   margin-top:-90px;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
 }
 .grid{
   display: flex;
-  align-items: center;                                
+  align-items: center;                           
+}
+.uppercase {
+  margin-top: 0em;
+  margin-bottom: 1em;
+  line-height: 1.5em;
+  padding-top: 0.75em;
+}
+@media(max-width: 480px) {
+  .uppercase {
+    font-size: 1em;
+    font-weight: bold;
+  }
 }
 .icon{
   padding-right: 1em;
 }
-
+@media(max-width: 480px) {
+  .icon {
+    font-size: 1em;
+  }
+}
 .booking{
   background-color: #003580;
-  padding: 15px 32px;
+  padding: 0.75em 1.5em;
   color: #fff;
   border-radius: 8px;
   cursor: pointer;
-
+}
+@media(max-width:480px) {
+  .booking {
+    padding: 0.375em 0.75em;
+  }
 }
 .airbnb{
   background-color: #fff;
   border: solid;
-  padding: 15px 32px;
+  padding: 0.75em 1.5em;
   color: red;
   border-radius: 8px;
   cursor: pointer;
-  width: 10em;
-  margin-bottom: 1em;
-
+  margin-left: 2em;
+}
+@media(max-width:480px) {
+  .airbnb {
+    padding: 0.375em 0.75em;
+  }
 }
 .booknow{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
-.grid-container{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 5em;
-   
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around
+}
+@media(max-width:1080px){
+  .location {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1.875em;
   }
-.item1 {
-    grid-row-start: 1;
-    grid-row-end: 3;
+}
+@media(max-width:700px) {
+  .map iframe {
+    width: 400px;
   }
-footer{
+}
+@media(max-width:480px) {
+  .map iframe {
+    width: 270px;
+  }
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+footer {
   width:100%;
   background-color: #826142;
   text-align:right;
@@ -191,3 +258,69 @@ footer{
   padding-right: 2em;
 }
 
+/* lang-menu */
+
+.lang-menu {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.5em;
+  font-weight: 500;
+}
+#first-lang {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 110px;
+  padding-left: 5px;
+}
+#first-lang:before {
+  content:'';
+  display: block;
+  margin-right: 10px;
+}
+.rs:before {
+  width: 44px;
+  height: 30px;
+  background-image: url(/images/rs.png);
+  padding: 0 5px;
+}
+.lang-menu ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+  background-color: transparent;
+  border: 0em;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 30px;
+  left: 0;
+  cursor: pointer;
+}
+.lang-menu ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+#second-lang {
+  width: 120px;
+  display: block;
+  padding: 5px;
+}
+#second-lang:before {
+  content:'';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.gb:before {
+  width: 44px;
+  height: 28px;
+  background-image: url(/images/gb.png);
+}
+#second-lang:hover {
+  border: 2px solid rgba(0,0,0,0.2);
+  color: black;
+}
+.lang-menu:hover ul {
+  display: block;
+}

@@ -1,78 +1,72 @@
 extends layout
 
 block content
-  script(src="/javascripts/index.js")
   img.img-nis(src='/images/naslovna/apartman-sredjeni.jpg' alt='Apartman kuca')
   section#dobrodosli.dobrodosli
-    h2.uvod Dobrodošli
+    h1.uvod #{__('welcome')}
     p.p-uvoda
-      | Niš je najveći grad centralne Srbije, a treći je po veličini u zemlji. Jedan je od najstarijih gradova na Balkanu i nalazi se na raskrsnici balkanskih i evropskih puteva, koji povezuju Evropu sa Bliskim istokom. Veruje se da je Niš naseljen još u praistorijsko doba, dok se u Arheološkom muzeju u Nišu mogu pronaći svi nalazi iz peroda od 4000 godina pre n.e. Niš je savremeni univerzitetski grad, ali istovremeno je i prirodni, društveni, privredni, obrazovni, zdravstveni, kulturni i sportski centar jugoistočne Srbije. Pored bogate istorije i izdašne prirode, Niš i okolina niša pruža velike mogućnosti za banjski, poslovni i kongresni turizam. Niška banja, park Čair, park Sveti Sava, Kamenički vis, Sićevačka klisura, Oblačinsko jezero, banja Topilo, Cerjanska pećina, Bojanine vode i Suva planina su neki od izletišta u Nišu i nadomak grada.
+      | #{__('index_intro_1')}
       br
       br
-      | Maximus apartmani su luksuzni apartmani smešteni na samo 5 minuta hoda od centra grada Niša. U našoj ponudi su 4 potpuno opremljena apartmana različite kvadrature. Svi apartmani su moderni, klimatizovani i korisnicima pružaju potpuno zadovoljstvo i uslugu.
-
+      | #{__('index_intro_2')}
   section#apartmani.apartmani
     .apartmani-tekst
       h2.naziv-apartmana Apartman 1  (32m<sup>2</sup>)
       p.opis-sobe
-        | Apartman se nalazi u prizemlju. Poseduje kuhinju sa šankom i dve stolice za ručavanje, kupatilo sa peškirima, jedan bračni krevet i jedan pomoćni ležaj na razvlačenje. Smeštajni kapacitet je za 4 osobe. Pored toga, apartman je moderno opremljen televizorom, internetom, klimom i ima pogled na dvorište. U svim našim apartmanima su dobrodošli i kućni ljubimci.
+        | #{__('apartment1_description')}
       .btn
         a(href='/apartmani/1') 
-          button.detaljnije Detaljnije
-    .apartmani-slika
-      img(src ="/images/apartman1/IMG_4520.jpg" alt='apartman 1')
+          button.detaljnije #{__('read_more')}
+    img.apartmani-slika(src ="/images/ap1.jpg" alt='apartman 1')
   section#apartmani.apartmani
     .apartmani-tekst
       h2.naziv-apartmana Apartman 2  (27m<sup>2</sup>)
       p.opis-sobe
-        | Apartman se nalazi u prizemlju. Poseduje 3 single kreveta i smeštajni kapacitet mu je za 3 osobe. Ovaj apartman je takodje moderno opremljen televizorom, internetom, klimom i ima pogled na ulicu. 
+        | #{__('apartment2_description')}
       .btn
         a(href='/apartmani/2') 
-          button.detaljnije Detaljnije
-    .apartmani-slika
-      img(src ="/images/apartman2/IMG_4459.jpg" alt='apartman 2')
+          button.detaljnije #{__('read_more')}
+    img.apartmani-slika(src ="/images/ap2.jpg" alt='apartman 2')
   section#apartmani.apartmani
     .apartmani-tekst
       h2.naziv-apartmana Apartman 3  (40m<sup>2</sup>)
       p.opis-sobe
-        | Treći apartman je najveći apartman, koji imamo u ponudi. Nalazi se na prvom spratu, ima veliku terasu i pogled na dvorište. Poseduje dva nivoa, kuhinju sa šankom i dve stolice za ručavanje. Jedan veliki bračni krevet i jedan single. Luksuzno je opemljen televizorom, internetom, klimom i po zahtevu je moguće dodati krevetac za bebe.
+        | #{__('apartment3_description')}
       .btn
         a(href='/apartmani/3') 
-          button.detaljnije Detaljnije
-    .apartmani-slika
-      img(src ="/images/apartman3/IMG_4478.jpg" alt='apartman 3')
+          button.detaljnije #{__('read_more')}
+    img.apartmani-slika(src ="/images/ap3.jpg" alt='apartman 3')
   section#apartmani.apartmani
     .apartmani-tekst
       h2.naziv-apartmana Apartman 4  (36m<sup>2</sup>)
       p.opis-sobe
-        | Apartman 4 se nalazi na prvom spratu i ima pogled na ulicu. Prostran je i jako dobro osvetljen. Poseduje jedan veliki bračni krevet i fotelju. Fotelja se razvlači i udobna je za spavanje. Pored kuhinje, u apatmanu se nalazi sto sa 3 stolice za ručavanje. Televizor, internet i klima su dostupni, kao i u ostalim apartmanima. Postoji mogućnost donošenja kreveta za bebe, po zahtevu.
+        | #{__('apartment4_description')}
       .btn
         a(href='/apartmani/4')
-          button.detaljnije Detaljnije
-    .apartmani-slika
-      img(src ="/images/apartman4/IMG_4539.jpg" alt='apartman 4')
-  .opis-mape
-    p.p-location U okolini Maximus apartmana nalaze se brojne prodavnice hrane, teretane, igraonice za decu, kafići, restorani, frizerski i kozmetički saloni. Na samo 5 minuta hoda je pešačka zona i centar grada, dok su niška Tvrdjava i park Čair udaljeni 15ak minuta hoda. U samom okruženju Maximus apartmana možete posetiti Narodni muzej, spomenik kralju Aleksandru, narodnu biblioteku Stevan Sremac, spomen sobu Branka Miljkovića i Stevana Sremca. Eparhija niška, odnosno Saborna crkva se takodje nalazi na 8 minuta hoda od apartmana. 
+          button.detaljnije #{__('read_more')}
+    img.apartmani-slika(src ="/images/ap4.jpg" alt='apartman 4')
+  p.p-location #{__('location_description')}
   section#kontakt
-   .grid-container
-    .item1
-      iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.9292924950028!2d21.889062315278558!3d43.3157395791343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b16294648281%3A0x5af7dd73f9945883!2sMaximus%20apartmani!5e0!3m2!1sen!2srs!4v1632926871578!5m2!1sen!2srs' width='960' height='500' style='border:0;' allowfullscreen='' loading='lazy')
-    .item2
-      h2.uppercase KONTAKT I REZERVACIJA
-      .grid
-       .icon
-         i.fa.fa-phone(style='font-size:24px')
-       .dscr
-         p +38163 74 04 550
-      .grid
-       .icon
-         i.fa.fa-envelope(style='font-size:24px')
-       .dscr
-         a(href='mailto:maximap193@yahoo.com') maximap193@yahoo.com
-    .item3
-      h2.uppercase REZERVIŠITE ODMAH
-      .booknow
-       a(href='https://www.booking.com/' target='_blank')
-        button.booking Booking.com
-       a(href='https://www.airbnb.com/' target='_blank')
-        button.airbnb Airbnb
+   .location
+    .map
+      iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.9292924950028!2d21.889062315278558!3d43.3157395791343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b16294648281%3A0x5af7dd73f9945883!2sMaximus%20apartmani!5e0!3m2!1sen!2srs!4v1632926871578!5m2!1sen!2srs' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy')
+    .contact
+      .item1
+        h2.uppercase #{__('contact')}
+        .grid
+          .icon
+            i.fa.fa-phone(style='font-size:1.5em')
+          .dscr
+            p +38163 74 04 550
+        .grid
+          .icon
+            i.fa.fa-envelope(style='font-size:1.5em')
+          .dscr
+            a(href='mailto:maximap193@yahoo.com') maximap193@yahoo.com
+      .item2
+        h2.uppercase #{__('reservation')}
+        .booknow
+        a(href='https://www.booking.com/' target='_blank')
+          button.booking Booking.com
+        a(href='https://www.airbnb.com/' target='_blank')
+          button.airbnb Airbnb

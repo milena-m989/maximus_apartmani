@@ -3,15 +3,26 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const { I18n } = require('i18n');
 
 const indexRouter = require('./routes/index');
 const apartmansRouter = require('./routes/apartmani');
+
+const i18n = new I18n({
+  locales: ['rs', 'gb'],
+  queryParameter: 'lang',
+  defaultLocale: 'rs',
+  directory: path.join(__dirname, 'locales')
+})
 
 const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+
+// initialise i18n
+app.use(i18n.init);
 
 app.use(logger('dev'));
 app.use(express.json());

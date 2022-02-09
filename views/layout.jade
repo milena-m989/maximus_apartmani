@@ -14,20 +14,22 @@ html
     link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
     link(rel='shortcut icon' href='/images/favicon.ico')
     script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+    script(src="/javascripts/layout.js")
   body
     #page-wrapper
       header#header
         .logo
           a(href='/#page-wrapper')
-            img#logo-img(src='https://user-images.githubusercontent.com/79284893/133991372-02941c4b-4f77-4d7c-858b-509abcd57b70.png' alt='maximus logo')
-        nav#nav-bar
-          ul
-            li
-              a.nav-link(href='/#dobrodosli') Dobrodošli
-            li
-              a.nav-link(href='/#apartmani') Apartmani
-            li
-              a.nav-link(href='/#kontakt') Kontakt i rezervacija
+            img#logo-img(src='/images/logo3.png' alt='maximus logo')
+        nav#nav-bar.nav-bar
+          a.nav-link(href='#dobrodosli') #{__('welcome')}
+          a.nav-link(href='#apartmani') #{__('apartments')}
+          a.nav-link(href='#kontakt') #{__('contact_and_reservation')}
+          .lang-menu
+            #first-lang.rs Srpski
+            ul
+              li
+                #second-lang.gb English
     block content
     script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous')
   footer 
