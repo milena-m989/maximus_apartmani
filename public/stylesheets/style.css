@@ -7,6 +7,11 @@ body{
   font-family: 'Montserrat', sans-serif;
   line-height: 1.8;
 }
+@media(max-width:480px) {
+  body {
+   font-size: 1em;
+  }
+}
 #page-wrapper{
   position: relative;
 }
@@ -14,21 +19,23 @@ body{
   position: fixed;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   width: 100%;
   background: transparent;
-  height: 5.625em;
-  padding-right: 2em;
+  padding-right: 1em;
+  line-height: 1.2em;
+  margin-top: auto;
 }
 #header.scrolled {
   background-color: #fff;
   transition: background-color 200ms linear;
 }
 #logo-img{
+  padding: 1em;
   width: 100%;
-  height: 100%;
-  max-width: 9.375em;
+  height: auto;
   }
-#nav-bar {
+.nav-bar {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -37,11 +44,15 @@ body{
   font-size: 1.5em;
   font-weight: bold;
 }
-nav > ul {
-  width: 60vw;
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-end;
+@media(max-width:1000px){
+  .nav-bar {
+    font-size: 1.2em;
+  }
+}
+@media(max-width:830px){
+  .nav-bar {
+    font-size: 1em;
+  }
 }
 .nav-link{
  padding: 0 1.250em;
@@ -65,41 +76,67 @@ nav > ul {
   margin-top:-90px;
 }
 .uvod{
-  padding: 0.75em;
+  padding: 0.75em 0.75em 0em 0.75em;
   font-size: 3em;
   font-family: 'Dancing Script', cursive;
 }
+@media(max-width:480px) {
+  .uvod {
+   font-size: 2em;
+  }
+}
 .p-uvoda{
-  padding: 0 1.875em 1.875em 1.875em;
+  padding: 1.5em;
   text-align: justify;
+}
+@media(max-width:1400px) {
+  .p-uvoda {
+   padding: 1.5em 1.5em 0em 1.5em;
+  }
 }
 .apartmani{
   display: flex;
   flex-direction: row;
   margin: 20px;
   justify-content:space-around;
+  align-items: center;
   padding-top: 90px;
   margin-top: -90px;
+}
+@media(max-width:1400px){
+  .apartmani{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .naziv-apartmana{
   font-family: 'Dancing Script', cursive;
   font-size: 2em;
-  padding: 0.75em;
+  padding-bottom: 0.75em;
+}
+@media(max-width:480px) {
+  .naziv-apartmana {
+   font-size: 1.5em;
+   font-weight:bold;
+  }
 }
 .apartmani-tekst{
-  width: 50vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  align-items: flex-start;
+  padding: 1.5em;
 }
 .apartmani-slika{
-  height: 40vw;
-  display: flex;
-  
+  width: 100%;
+  height: auto;
 }
 .opis-sobe{
-  padding-bottom: 1em;
   text-align: justify;
+}
+.btn {
+  padding: 0em;
 }
 .detaljnije{
   display: inline-block;
@@ -114,24 +151,23 @@ nav > ul {
 .detaljnije:hover{
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-.opis-mape{
-  text-align: center;
-  padding: 30px;
+@media(max-width:480px) {
+  .detaljnije {
+   padding: 8px 16px;
+  }
 }
 .p-location{
   text-align: justify;
+  padding: 1.5em;
 }
 #kontakt{
-  display:flex;
-  flex-direction: row;
-  justify-content:space-around;
   padding-top:90px;
   margin-top:-90px;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
 }
 .grid{
   display: flex;
-  align-items: center;                                
+  align-items: center;                           
 }
 .uppercase {
   margin-top: 0em;
@@ -139,16 +175,31 @@ nav > ul {
   line-height: 1.5em;
   padding-top: 0.75em;
 }
+@media(max-width: 480px) {
+  .uppercase {
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
 .icon{
   padding-right: 1em;
 }
-
+@media(max-width: 480px) {
+  .icon {
+    font-size: 1em;
+  }
+}
 .booking{
   background-color: #003580;
   padding: 0.75em 1.5em;
   color: #fff;
   border-radius: 8px;
   cursor: pointer;
+}
+@media(max-width:480px) {
+  .booking {
+    padding: 0.375em 0.75em;
+  }
 }
 .airbnb{
   background-color: #fff;
@@ -159,26 +210,40 @@ nav > ul {
   cursor: pointer;
   margin-left: 2em;
 }
+@media(max-width:480px) {
+  .airbnb {
+    padding: 0.375em 0.75em;
+  }
+}
 .booknow{
   display: flex;
   flex-direction: row;
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 3em;
-    padding: 1em;
-   
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around
 }
-.item1 {
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-.item2 {
-    padding-left: 2em;
+@media(max-width:1080px){
+  .location {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1.875em;
   }
-.item3 {
-    padding-left: 2em;
+}
+@media(max-width:700px) {
+  .map iframe {
+    width: 400px;
+  }
+}
+@media(max-width:480px) {
+  .map iframe {
+    width: 270px;
+  }
+}
+.contact {
+  display: flex;
+  flex-direction: column;
 }
 footer {
   width:100%;
@@ -196,16 +261,15 @@ footer {
 /* lang-menu */
 
 .lang-menu {
-  margin-top: 1.2em;
   position: relative;
-  padding-bottom: 0.75em;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.5em;
-  font-weight: normal;
+  font-weight: 500;
 }
 #first-lang {
   cursor: pointer;
   display: flex;
+  align-items: center;
   width: 110px;
   padding-left: 5px;
 }
@@ -228,8 +292,9 @@ footer {
   border: 0em;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 35px;
+  top: 30px;
   left: 0;
+  cursor: pointer;
 }
 .lang-menu ul li {
   list-style: none;
@@ -259,5 +324,3 @@ footer {
 .lang-menu:hover ul {
   display: block;
 }
-
-
