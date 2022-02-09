@@ -4,12 +4,13 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const { I18n } = require('i18n');
+// const parse = require('url-parse');
 
 const indexRouter = require('./routes/index');
 const apartmansRouter = require('./routes/apartmani');
 
 const i18n = new I18n({
-  locales: ['rs', 'en'],
+  locales: ['rs', 'gb'],
   queryParameter: 'lang',
   defaultLocale: 'rs',
   directory: path.join(__dirname, 'locales')
