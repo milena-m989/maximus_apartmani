@@ -15,7 +15,7 @@ block content
       p.opis-sobe
         | #{__('apartment1_description')}
       .btn
-        a(href='/apartmani/1') 
+        a(href='/#{locale}/apartmani/1')
           button.detaljnije #{__('read_more')}
     img.apartmani-slika(src ="/images/ap1.jpg" alt='apartman 1')
   section#apartmani.apartmani
@@ -24,7 +24,7 @@ block content
       p.opis-sobe
         | #{__('apartment2_description')}
       .btn
-        a(href='/apartmani/2') 
+        a(href='/#{locale}/apartmani/2')
           button.detaljnije #{__('read_more')}
     img.apartmani-slika(src ="/images/ap2.jpg" alt='apartman 2')
   section#apartmani.apartmani
@@ -33,7 +33,7 @@ block content
       p.opis-sobe
         | #{__('apartment3_description')}
       .btn
-        a(href='/apartmani/3') 
+        a(href='/#{locale}/apartmani/3')
           button.detaljnije #{__('read_more')}
     img.apartmani-slika(src ="/images/ap3.jpg" alt='apartman 3')
   section#apartmani.apartmani
@@ -42,7 +42,7 @@ block content
       p.opis-sobe
         | #{__('apartment4_description')}
       .btn
-        a(href='/apartmani/4')
+        a(href='/#{locale}/apartmani/4')
           button.detaljnije #{__('read_more')}
     img.apartmani-slika(src ="/images/ap4.jpg" alt='apartman 4')
   p.p-location #{__('location_description')}
