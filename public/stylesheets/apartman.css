@@ -62,6 +62,9 @@
   width: 100%;
   height: auto;
 }
+.carousel-item {
+  z-index: -1;
+}
 .apartment_name {
   padding: 0 4em;
 }

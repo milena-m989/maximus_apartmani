@@ -35,6 +35,12 @@ body{
   height: auto;
   padding-left: 0.75em;
   }
+hr {
+  z-index: -1;
+}
+sup {
+  z-index: -1;
+}
 .navbar-collapse{
   flex-grow: 0;
   }
