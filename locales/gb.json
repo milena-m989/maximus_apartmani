@@ -23,5 +23,18 @@
 	"iron": "Iron (on request)",
 	"pet_friendly": "Pet friendly",
 	"crib": "Crib (on request)",
-	"contact_and_reservation": "Contact and reservation"
+	"contact_and_reservation": "Contact and reservation",
+	"toilet_paper": "Toilet paper", 
+	"shampoo": "Shampoo",
+	"soap": "Soap",
+	"shower": "Shower",
+	"towels": "Towels",
+	"electric_stove": "Electric stove",
+	"fridge": "Fridge",
+	"dishes": "Dishes",
+	"electric_teapot": "Electric teapot",
+	"glasses": "Glasses",
+	"cutlery": "Cutlery",
+	"cups": "Cups"
+
 }

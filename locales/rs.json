@@ -23,5 +23,17 @@
   "iron": "Pegla (na upit)",
   "pet_friendly": "Ljubimci dozvoljeni",
   "crib": "Krevetac (na upit)",
-  "contact_and_reservation": "Kontakt i rezervacija"
+  "contact_and_reservation": "Kontakt i rezervacija",
+	"toilet_paper": "Wc papir", 
+	"shampoo": "Šampon",
+	"soap": "Sapun",
+	"shower": "Tuš kabina",
+	"towels": "Peškiri",
+  "electric_stove": "Indukciona ploča",
+	"fridge": "Fržider",
+	"dishes": "Posuđe",
+	"electric_teapot": "Kuvalo",
+	"glasses": "Čaše",
+	"cutlery": "Escajg",
+	"cups": "Šolje"
 }
