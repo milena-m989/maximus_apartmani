@@ -16,5 +16,12 @@
 	"details": "Details",
 	"kitchen": "Kitchen",
 	"bathroom": "Bathroom",
+	"hair_dryer": "Hair Dryer",
+	"tv": "TV",
+	"wifi": "Wi-Fi",
+	"air_con": "A/C",
+	"iron": "Iron (on request)",
+	"pet_friendly": "Pet friendly",
+	"crib": "Crib (on request)",
 	"contact_and_reservation": "Contact and reservation"
 }

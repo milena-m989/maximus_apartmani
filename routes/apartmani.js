@@ -1,39 +1,41 @@
 var express = require('express');
 var router = express.Router();
 
-const features = {
-    "fen": {
-        title: "Fen za kosu",
-        icon: "https://img.icons8.com/ios/50/000000/hair-dryer.png"
-    },
-    "tv": {
-        title: "TV",
-        icon: "https://img.icons8.com/ios/50/000000/tv.png"
-    },
-    "wifi": {
-        title: "Wi-Fi",
-        icon: "https://img.icons8.com/ios/50/000000/wifi.png"
-    },
-    "klima": {
-        title: "Klima",
-        icon: "https://img.icons8.com/ios/50/000000/air-conditioner.png"
-    },
-    "kuhinja": {
-        title: "Kuhinja",
-        icon: "https://img.icons8.com/ios/50/000000/kitchen-room.png"
-    },
-    "pegla": {
-        title: "Pegla na upit",
-        icon: "https://img.icons8.com/ios/50/000000/iron.png"
-    },
-    "pet": {
-        title: "Pet friendly",
-        icon: "https://img.icons8.com/ios/50/000000/pet.png"
-    },
-    "krevetac": {
-        title: "Krevetac na upit",
-        icon: "https://img.icons8.com/ios/50/000000/crib.png"
-    },
+function feature(name, __) {
+    switch(name) {
+        case "fen": return {
+            title: __('hair_dryer'),
+            icon: "https://img.icons8.com/ios/50/000000/hair-dryer.png"
+        };
+        case "tv": return {
+            title: __('tv'),
+            icon: "https://img.icons8.com/ios/50/000000/tv.png"
+        };
+        case "wifi": return {
+            title: __('wifi'),
+            icon: "https://img.icons8.com/ios/50/000000/wifi.png"
+        };
+        case "klima": return {
+            title: __('air_con'),
+            icon: "https://img.icons8.com/ios/50/000000/air-conditioner.png"
+        };
+        case "kuhinja": return {
+            title: __('kitchen'),
+            icon: "https://img.icons8.com/ios/50/000000/kitchen-room.png"
+        };
+        case "pegla": return {
+            title: __('iron'),
+            icon: "https://img.icons8.com/ios/50/000000/iron.png"
+        };
+        case "pet": return {
+            title: __('pet_friendly'),
+            icon: "https://img.icons8.com/ios/50/000000/pet.png"
+        };
+        case "krevetac": return {
+            title: __('crib'),
+            icon: "https://img.icons8.com/ios/50/000000/crib.png"
+        };
+    }
 }
 
 const bathroom = {
@@ -96,13 +98,13 @@ router.get('/:lang/apartmani/1', function(req, res, next) {
     const config = { 
         name: 'Apartman 1', 
         features: [
-            features["tv"], 
-            features["wifi"], 
-            features["klima"],  
-            features["kuhinja"], 
-            features["pegla"],
-            features["fen"],  
-            features["pet"],
+            feature("tv", res.__),
+            feature("wifi", res.__),
+            feature("klima", res.__),
+            feature("kuhinja", res.__),
+            feature("pegla", res.__),
+            feature("fen", res.__),
+            feature("pet", res.__),
         ],
         bathroom: [
             bathroom["peskiri"], 
@@ -147,12 +149,12 @@ router.get('/:lang/apartmani/2', function(req, res, next) {
     const config = {
         name: 'Apartman 2',
         features: [
-            features["tv"], 
-            features["wifi"], 
-            features["klima"],   
-            features["pegla"],
-            features["fen"],  
-            features["pet"],
+            feature("tv", res.__),
+            feature("wifi", res.__),
+            feature("klima", res.__),
+            feature("pegla", res.__),
+            feature("fen", res.__),
+            feature("pet", res.__),
         ],
         bathroom: [
             bathroom["peskiri"], 
@@ -185,14 +187,14 @@ router.get('/:lang/apartmani/3', function(req, res, next) {
     const config = { 
         name: 'Apartman 3', 
         features: [
-            features["tv"], 
-            features["wifi"], 
-            features["klima"],  
-            features["kuhinja"], 
-            features["pegla"],
-            features["fen"],  
-            features["pet"],
-            features["krevetac"],
+            feature("tv", res.__),
+            feature("wifi", res.__),
+            feature("klima", res.__),
+            feature("kuhinja", res.__),
+            feature("pegla", res.__),
+            feature("fen", res.__),
+            feature("pet", res.__),
+            feature("krevetac", res.__),
         ],
         bathroom: [
             bathroom["peskiri"], 
@@ -237,14 +239,14 @@ router.get('/:lang/apartmani/4', function(req, res, next) {
     const config = { 
         name: 'Apartman 4', 
         features: [
-            features["tv"], 
-            features["wifi"], 
-            features["klima"],  
-            features["kuhinja"], 
-            features["pegla"],
-            features["fen"],  
-            features["pet"],
-            features["krevetac"],
+            feature("tv", res.__),
+            feature("wifi", res.__),
+            feature("klima", res.__),
+            feature("kuhinja", res.__),
+            feature("pegla", res.__),
+            feature("fen", res.__),
+            feature("pet", res.__),
+            feature("krevetac", res.__),
         ],
         bathroom: [
             bathroom["peskiri"], 
