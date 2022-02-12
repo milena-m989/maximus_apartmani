@@ -92,6 +92,7 @@ const kitchen = {
 
 /* GET home page. */
 router.get('/:lang/apartmani/1', function(req, res, next) {
+    res.setLocale(req.params.lang);
     const config = { 
         name: 'Apartman 1', 
         features: [
@@ -138,7 +139,6 @@ router.get('/:lang/apartmani/1', function(req, res, next) {
             }
         ]
     }
-    res.setLocale(req.params.lang);
     res.render('apartman', config);
 });
 
