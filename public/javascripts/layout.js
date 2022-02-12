@@ -39,4 +39,7 @@ $(function () {
         url.searchParams.set("lang", selectedLang);
         window.location.href = url.href;
     }) 
+    $('.navbar-toggler').click(function (){
+        $('#header').addClass('scrolled');
+    })
 });
