@@ -19,12 +19,12 @@ html
     #page-wrapper
       header#header
         .logo
-          a(href='/#page-wrapper')
+          a(href='/#{locale}')
             img#logo-img(src='/images/logo3.png' alt='maximus logo')
         nav#nav-bar.nav-bar
-          a.nav-link(href='#dobrodosli') #{__('welcome')}
-          a.nav-link(href='#apartmani') #{__('apartments')}
-          a.nav-link(href='#kontakt') #{__('contact_and_reservation')}
+          a.nav-link(href='/#{locale}/#dobrodosli') #{__('welcome')}
+          a.nav-link(href='/#{locale}/#apartmani') #{__('apartments')}
+          a.nav-link(href='/#{locale}/#kontakt') #{__('contact_and_reservation')}
           .lang-menu
             #first-lang.rs Srpski
             ul

@@ -91,7 +91,7 @@ const kitchen = {
 }
 
 /* GET home page. */
-router.get('/1', function(req, res, next) {
+router.get('/:lang/apartmani/1', function(req, res, next) {
     const config = { 
         name: 'Apartman 1', 
         features: [
@@ -138,10 +138,12 @@ router.get('/1', function(req, res, next) {
             }
         ]
     }
+    res.setLocale(req.params.lang);
     res.render('apartman', config);
 });
 
-router.get('/2', function(req, res, next) {
+router.get('/:lang/apartmani/2', function(req, res, next) {
+    res.setLocale(req.params.lang);
     const config = {
         name: 'Apartman 2',
         features: [
@@ -178,7 +180,8 @@ router.get('/2', function(req, res, next) {
     res.render('apartman', config);
 });
 
-router.get('/3', function(req, res, next) {
+router.get('/:lang/apartmani/3', function(req, res, next) {
+    res.setLocale(req.params.lang);
     const config = { 
         name: 'Apartman 3', 
         features: [
@@ -229,7 +232,8 @@ router.get('/3', function(req, res, next) {
     res.render('apartman', config);
 });
 
-router.get('/4', function(req, res, next) {
+router.get('/:lang/apartmani/4', function(req, res, next) {
+    res.setLocale(req.params.lang);
     const config = { 
         name: 'Apartman 4', 
         features: [

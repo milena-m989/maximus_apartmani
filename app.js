@@ -10,7 +10,6 @@ const apartmansRouter = require('./routes/apartmani');
 
 const i18n = new I18n({
   locales: ['rs', 'gb'],
-  queryParameter: 'lang',
   defaultLocale: 'rs',
   directory: path.join(__dirname, 'locales')
 })
@@ -32,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // routes
 app.use('/', indexRouter);
-app.use('/apartmani', apartmansRouter);
+app.use('/', apartmansRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
