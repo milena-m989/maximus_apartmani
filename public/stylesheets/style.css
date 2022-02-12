@@ -289,9 +289,9 @@ footer {
 
 .lang-menu {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.5em;
-  font-weight: 500;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.75em;
+  font-weight: 600;
 }
 #first-lang {
   cursor: pointer;
