@@ -7,4 +7,8 @@ router.get('/:lang/', function(req, res, next) {
   res.render('index');
 });
 
+router.get('/', function(req, res, next) {
+  res.redirect('/rs/');
+});
+
 module.exports = router;
