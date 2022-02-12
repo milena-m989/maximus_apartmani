@@ -16,19 +16,22 @@ html
     script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
   body
     #page-wrapper
-      header#header
-        .logo
-          a(href='/#{locale}')
-            img#logo-img(src='/images/logo3.png' alt='maximus logo')
-        nav#nav-bar.nav-bar
-          a.nav-link(href='/#{locale}/#dobrodosli') #{__('welcome')}
-          a.nav-link(href='/#{locale}/#apartmani') #{__('apartments')}
-          a.nav-link(href='/#{locale}/#kontakt') #{__('contact_and_reservation')}
-          .lang-menu
-            #first-lang.rs Srpski
-            ul
-              li
-                #second-lang.gb English
+      nav#header.navbar.navbar-expand-lg.navbar-light
+        .container-fluid
+          a.navbar-brand(href='/#{locale}/')
+            img#logo-img(src='/images/logo3.png' alt='maximus logo')  
+          button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarSupportedContent.collapse.navbar-collapse
+            .navbar-nav
+              a.nav-link.active(aria-current='page' href='/#{locale}/#dobrodosli') #{__('welcome')}
+              a.nav-link(href='/#{locale}/#apartmani') #{__('apartments')}
+              a.nav-link(href='/#{locale}/#kontakt') #{__('contact_and_reservation')}
+              .lang-menu
+                #first-lang.rs Srpski
+                ul
+                  li
+                    #second-lang.gb English
     block content
     script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous')
     script(src="/javascripts/layout.js")

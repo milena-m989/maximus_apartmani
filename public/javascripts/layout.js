@@ -41,4 +41,7 @@ $(function () {
         var url = new URL(window.location.href.replace(`/${oldLang}/`, `/${newLang}/`));
         window.location.href = url.href;
     }) 
+    $('.navbar-toggler').click(function (){
+        $('#header').addClass('scrolled');
+    })
 });
